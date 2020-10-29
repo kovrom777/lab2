@@ -20,6 +20,9 @@ public class AiroportWritable implements Writable {
 
 
 
+    public AiroportWritable(IntWritable year, AiroportWritable quarter, AiroportWritable ){
+
+    }
 
     @Override
     public void write(DataOutput output){
