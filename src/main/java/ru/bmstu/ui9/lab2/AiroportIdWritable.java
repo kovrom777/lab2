@@ -8,7 +8,11 @@ import java.io.DataOutput;
 
 public class AiroportIdWritable implements Writable  {
 
-    Text
+    Text description;
+
+    public AiroportIdWritable(Text description){
+        this.description = description;
+    }
 
 
     @Override
