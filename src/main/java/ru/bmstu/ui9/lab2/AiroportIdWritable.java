@@ -5,6 +5,7 @@ import org.apache.hadoop.io.Writable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
+import java.io.IOException;
 
 public class AiroportIdWritable implements Writable  {
 
@@ -14,14 +15,19 @@ public class AiroportIdWritable implements Writable  {
         this.description = description;
     }
 
+    public Text getDescription() {
+        return description;
+    }
+
+
 
     @Override
-    public void write(DataOutput output){
-
+    public void write(DataOutput output) throws IOException {
+        description.write(output);
     }
 
     @Override
-    public void readFields(DataInput input){
-
+    public void readFields(DataInput input) throws IOException{
+        description.readFields(input);
     }
 }
