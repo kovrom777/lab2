@@ -21,7 +21,7 @@ public class MainClass {
         job.setJobName("MainClass");
 //        FileInputFormat.addInputPath(job, new Path(args[0]));
 //        FileInputFormat.addInputPath(job, new Path(args[1]));
-        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.te);
+//        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, );
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setMapperClass(MainClass.class);
         job.setReducerClass(MainClass.class);
