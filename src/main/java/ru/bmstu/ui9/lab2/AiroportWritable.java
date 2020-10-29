@@ -6,6 +6,6 @@ import org.apache.hadoop.io.Writable;
 public class AiroportWritable implements Writable {
 
 
-    IntWritable year, quarter, month, 
+    IntWritable year, quarter, month, day_of_month;
 
 }
