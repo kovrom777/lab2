@@ -19,7 +19,7 @@ public class AiroportWritable implements Writable {
     Text fl_date, unique_carrier, carrier, tail_num, cancelation_code;
 
 
-    
+
 
 
     @Override
