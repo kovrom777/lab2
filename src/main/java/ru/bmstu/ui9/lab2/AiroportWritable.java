@@ -21,7 +21,6 @@ public class AiroportWritable implements Writable {
 
 
 
-
     @Override
     public void write(DataOutput output){
 
