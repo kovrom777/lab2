@@ -1,4 +1,7 @@
 package ru.bmstu.ui9.lab2;
 
-public class AiroportWritable {
+import org.apache.hadoop.io.Writable;
+
+public class AiroportWritable implements Writable {
+
 }
