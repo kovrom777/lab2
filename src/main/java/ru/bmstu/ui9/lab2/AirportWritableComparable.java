@@ -15,7 +15,15 @@ public class AirportWritableComparable implements WritableComparable {
         this.airportKey = airportKey;
     }
 
+    public int getAirportId() {
+        return airportId;
+    }
 
+    public int getAirportKey() {
+        return airportKey;
+    }
+
+    
 
     @Override
     public void write(DataOutput output){
