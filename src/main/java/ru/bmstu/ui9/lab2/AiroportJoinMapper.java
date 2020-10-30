@@ -1,7 +1,9 @@
 package ru.bmstu.ui9.lab2;
 
-public class AiroportJoinMapper {
+import org.apache.hadoop.mapreduce.Mapper;
 
-    
+public class AiroportJoinMapper extends Mapper {
+
+
 
 }
