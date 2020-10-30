@@ -9,6 +9,9 @@ public class AirportWritableComparable implements WritableComparable {
 
     int airportId, airportKey;
 
+
+    public AirportWritableComparable(int air)
+
     @Override
     public void write(DataOutput output){
 
