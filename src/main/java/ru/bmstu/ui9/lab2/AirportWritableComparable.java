@@ -7,6 +7,7 @@ import java.io.DataOutput;
 
 public class AirportWritableComparable implements WritableComparable {
 
+    int airportId, airportKey;
 
     @Override
     public void write(DataOutput output){
