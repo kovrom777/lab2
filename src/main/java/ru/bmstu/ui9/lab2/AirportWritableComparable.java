@@ -41,6 +41,18 @@ public class AirportWritableComparable implements WritableComparable {
     @Override
     public int compareTo(AirportWritableComparable comp){
 
+        if (this.airportKey > airportKey){
+            return 1;
+        }else if (this.airportKey != airportKey){
+            return -1;
+        }
+
+        if (this.airportId > comp.airportId){
+            return 1
+        }else if (this.airportId != comp.airportId){
+            return -1;
+        }
+
     }
 
 }
