@@ -23,7 +23,7 @@ public class AirportWritableComparable implements WritableComparable {
         return airportKey;
     }
 
-    
+
 
     @Override
     public void write(DataOutput output){
