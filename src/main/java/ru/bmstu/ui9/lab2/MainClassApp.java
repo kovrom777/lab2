@@ -22,6 +22,9 @@ public class MainClassApp {
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, AirraceJoinMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportJoinMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
 
         job.setPartitionerClass(AirportJoinPartioner.class);
         job.setMapOutputKeyClass(AirportWritableComparable.class);
