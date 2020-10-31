@@ -8,6 +8,9 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
     protected void map(LongWritable key, Text value, Mapper.Context contex){
         String lineNumber = value.toString();
         String[] airraceArray = lineNumber.split(",");
-        
+        if (key.get() > 0){
+            String airportName = "";
+            
+        }
     }
 }
