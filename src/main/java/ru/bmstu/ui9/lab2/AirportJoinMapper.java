@@ -7,6 +7,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
     protected void map(LongWritable key, Text value, Mapper.Context contex){
         String lineNumber = value.toString();
-        String[] airraceArray = lineNumber.
+        String[] airraceArray = lineNumber.split(",");
+        
     }
 }
