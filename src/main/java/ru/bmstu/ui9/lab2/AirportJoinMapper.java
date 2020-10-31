@@ -10,8 +10,6 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
     protected void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException {
         String lineNumber = value.toString();
         String[] airraceArray = lineNumber.split(",");
-        System.setOut(new PrintStream( new FileOutputStream(FileDescriptor.out)));
-        System.out.println(value.toString());
 
         if (key.get() > 0){
             String airportName = "";
