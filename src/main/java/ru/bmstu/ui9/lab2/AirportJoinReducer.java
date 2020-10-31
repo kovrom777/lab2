@@ -1,4 +1,6 @@
 package ru.bmstu.ui9.lab2;
 
-public class AirportJoinReducer {
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class AirportJoinReducer extends Reducer {
 }

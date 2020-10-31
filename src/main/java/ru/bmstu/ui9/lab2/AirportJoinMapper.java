@@ -4,8 +4,10 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
+import java.io.IOException;
+
 public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
-    protected void map(LongWritable key, Text value, Mapper.Context contex){
+    protected void map(LongWritable key, Text value, Mapper.Context contex) throws IOException, InterruptedException {
         String lineNumber = value.toString();
         String[] airraceArray = lineNumber.split(",");
         if (key.get() > 0){
@@ -14,7 +16,8 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
                 airportName += airraceArray[i];
             }
             int airraceId = Integer.parseInt(airraceArray[0].replace("\"", ""));
-            contex.write();
+            contex.write(new AirportWritableComparable(airraceId, 0),
+                    new Text(airportName.replace("\"", "")));
         }
     }
 }
