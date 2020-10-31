@@ -56,7 +56,7 @@ public class AiroportWritable implements Writable {
         this.tail_num = tail_num;
         this.cancelation_code = cancelation_code;
     }
-    
+
     @Override
     public void write(DataOutput output) throws IOException {
 
