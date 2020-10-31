@@ -10,7 +10,7 @@ import java.util.Iterator;
 public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text, Text, Text> {
 
     @Override
-    protected void reduce(AirportWritableComparable key, Iterable<Text> values, Context contex) throws IOException, InterruptedException {
+    protected void reduce(AirportWritableComparable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         Iterator<Text> iterator = values.iterator();
         Text airport = new Text(iterator.next());
         if (iterator.hasNext()){
@@ -33,7 +33,7 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
                 count++;
             }
             System.out.println("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count);
-            contex.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count));
+            context.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count));
 
         }
     }
