@@ -32,7 +32,8 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
                 }
                 count++;
             }
-            contex.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay));
+
+            contex.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count));
 
         }
     }

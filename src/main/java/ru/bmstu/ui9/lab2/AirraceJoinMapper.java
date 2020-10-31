@@ -17,7 +17,7 @@ public class AirraceJoinMapper extends Mapper<LongWritable, Text, AiroportsCompa
                 int airportId = Integer.parseInt(flyInfoArray[14]);
                 double delayTime = Double.parseDouble(flyInfoArray[17]);
                 if (delayTime > 0){
-                    context.write(new AirportWritableComparable(airportId, 1), new Text("DelayTime: " + delayTime));
+                    context.write(new AirportWritableComparable(airportId, 1), new Text(String.valueOf(delayTime)));
                 }
             }
         }
