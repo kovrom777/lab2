@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a031617c-2b3c-4277-bf0d-1764e8a65abc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="900">
+              <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#416#417#0" expanded="true" />
@@ -60,6 +61,8 @@
                 <element signature="e#515#516#0" expanded="true" />
                 <element signature="method#write#0;class#AirportWritableComparable#0" />
                 <element signature="method#readFields#0;class#AirportWritableComparable#0" />
+                <element signature="e#1890#1891#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,11 +77,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportIdWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportJoinMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java" />
       </list>
     </option>
   </component>
@@ -207,12 +213,12 @@
       <workItem from="1603956998330" duration="816000" />
       <workItem from="1603992206038" duration="6387000" />
       <workItem from="1604070092964" duration="1101000" />
-      <workItem from="1604094545512" duration="1363000" />
+      <workItem from="1604094545512" duration="1765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9667000" />
+    <option name="totallyTimeSpent" value="10069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -289,13 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportIdWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -308,8 +307,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="900">
+          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#416#417#0" expanded="true" />
@@ -318,6 +317,18 @@
             <element signature="e#515#516#0" expanded="true" />
             <element signature="method#write#0;class#AirportWritableComparable#0" />
             <element signature="method#readFields#0;class#AirportWritableComparable#0" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

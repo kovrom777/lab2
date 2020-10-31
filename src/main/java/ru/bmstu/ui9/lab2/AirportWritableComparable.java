@@ -1,7 +1,6 @@
 package ru.bmstu.ui9.lab2;
 
 import org.apache.hadoop.io.WritableComparable;
-import org.omg.CORBA.Object;
 
 import java.io.DataInput;
 import java.io.DataOutput;
@@ -72,7 +71,6 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     public int hashCode(){
-        return Objects.hashCode(this
-        )
+        return Objects.hash(airportKey, airportId);
     }
 }
