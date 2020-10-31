@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class MainClass {
+public class MainClassApp {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
@@ -16,7 +16,7 @@ public class MainClass {
             System.exit(-1);
         }
         Job job = Job.getInstance();
-        job.setJarByClass(MainClass.class);
+        job.setJarByClass(MainClassApp.class);
         job.setJobName("MainClass");
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportJoinMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
