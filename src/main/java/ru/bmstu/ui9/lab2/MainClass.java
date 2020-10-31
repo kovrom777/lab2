@@ -19,9 +19,7 @@ public class MainClass {
         Job job = Job.getInstance();
         job.setJarByClass(MainClass.class);
         job.setJobName("MainClass");
-//        FileInputFormat.addInputPath(job, new Path(args[0]));
-//        FileInputFormat.addInputPath(job, new Path(args[1]));
-//        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, );
+        MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportJoinMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setMapperClass(MainClass.class);
         job.setReducerClass(MainClass.class);
