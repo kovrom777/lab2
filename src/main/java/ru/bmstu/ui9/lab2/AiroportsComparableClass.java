@@ -5,12 +5,16 @@ import org.apache.hadoop.io.WritableComparator;
 
 public class AiroportsComparableClass extends WritableComparator {
 
-    protected AiroportsComparableClass(){}
-//        super(AirportWritableComparable.class, true);
+    protected AiroportsComparableClass(){
+
+    }
 
         @Override
         public int compare(WritableComparable first, WritableComparable second){
-            AirportWritableComparable firstPair = 
+            AirportWritableComparable firstPair = (AirportWritableComparable) first;
+            AirportWritableComparable secondPair = (AirportWritableComparable) first;
+
+            return firstPair.compareAirportId(secondPair);
         }
     }
 
