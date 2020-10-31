@@ -38,7 +38,7 @@
                         <archive>
                             <index>true</index>
                             <manifest>
-                                <mainClass>ru.WordCountApp</mainClass>
+                                <mainClass>ru.bmstu.ui9.lab2.WordCountApp</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
