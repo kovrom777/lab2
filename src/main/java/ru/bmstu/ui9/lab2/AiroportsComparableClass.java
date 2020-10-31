@@ -12,7 +12,7 @@ public class AiroportsComparableClass extends WritableComparator {
         @Override
         public int compare(WritableComparable first, WritableComparable second){
             AirportWritableComparable firstPair = (AirportWritableComparable) first;
-            AirportWritableComparable secondPair = (AirportWritableComparable) first;
+            AirportWritableComparable secondPair = (AirportWritableComparable) second;
 
             return firstPair.compareAirportId(secondPair);
         }
