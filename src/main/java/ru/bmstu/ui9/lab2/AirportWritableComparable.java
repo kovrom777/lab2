@@ -1,10 +1,12 @@
 package ru.bmstu.ui9.lab2;
 
 import org.apache.hadoop.io.WritableComparable;
+import org.omg.CORBA.Object;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.util.Objects;
 
 public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
 
@@ -57,7 +59,8 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
 
     public int compareAirportId(AirportWritableComparable obj){
         if (this.airportId == obj.airportId) return 1;
-        else if ()
+        else if (this.airportId != obj.airportId) return -1;
+        return 0;
     }
 
     @Override
@@ -66,5 +69,10 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         if (getClass() != obj.getClass()|| obj == null) return false;
         AirportWritableComparable that = (AirportWritableComparable) obj;
         return airportId == that.airportId && airportKey == airportKey;
+    }
+
+    public int hashCode(){
+        return Objects.hashCode(this
+        )
     }
 }
