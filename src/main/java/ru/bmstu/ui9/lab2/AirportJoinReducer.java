@@ -21,6 +21,8 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
 
             while (iterator.hasNext()){
                 airraceDelay = iterator.next();
+                double dopNewDelay = Double.parseDouble(String.valueOf(airraceDelay));
+                delay += dopNewDelay;
                 
             }
 
