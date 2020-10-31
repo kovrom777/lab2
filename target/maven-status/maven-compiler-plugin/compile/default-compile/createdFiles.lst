@@ -2,8 +2,8 @@ ru/bmstu/ui9/lab2/AirportJoinPartioner.class
 ru/bmstu/ui9/lab2/AirraceJoinMapper.class
 ru/bmstu/ui9/lab2/AirportWritableComparable.class
 ru/bmstu/ui9/lab2/AiroportWritable.class
+ru/bmstu/ui9/lab2/MainClassApp.class
 ru/bmstu/ui9/lab2/AirportJoinReducer.class
-ru/bmstu/ui9/lab2/MainClass.class
 ru/bmstu/ui9/lab2/AirportJoinMapper.class
 ru/bmstu/ui9/lab2/AiroportsComparableClass.class
 ru/bmstu/ui9/lab2/AiroportIdWritable.class
