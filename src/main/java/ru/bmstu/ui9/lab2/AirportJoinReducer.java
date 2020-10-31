@@ -13,6 +13,8 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
         Iterator<Text> iterator = values.iterator();
         Text airport = new Text(iterator.next());
         if (iterator.hasNext()){
+            Text airraceDelay = iterator.next();
+            int count = 1;
             
         }
     }
