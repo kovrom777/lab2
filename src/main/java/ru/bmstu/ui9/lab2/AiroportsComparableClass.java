@@ -1,4 +1,11 @@
 package ru.bmstu.ui9.lab2;
 
-public class AiroportsComparableClass {
+import org.apache.hadoop.io.WritableComparable;
+
+public class AiroportsComparableClass extends WritableComparable {
+
+    protected AiroportsComparableClass(){
+        super(AirportWritableComparable.class, true);
+    }
+
 }
