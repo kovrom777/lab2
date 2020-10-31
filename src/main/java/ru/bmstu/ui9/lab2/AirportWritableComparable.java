@@ -11,6 +11,10 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
 
     int airportId, airportKey;
 
+    public AirportWritableComparable(){
+        airportId = 0;
+        airportKey = 0;
+    }
 
     public AirportWritableComparable(int airportId, int airportKey){
         this.airportId = airportId;
