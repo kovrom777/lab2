@@ -38,7 +38,7 @@
                         <archive>
                             <index>true</index>
                             <manifest>
-                                <mainClass>com.example.hadoop.wordCount.WordCountApp</mainClass>
+                                <mainClass>.WordCountApp</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
