@@ -28,7 +28,6 @@ public class MainClassApp {
         job.setReducerClass(AirportJoinReducer.class);
         job.setGroupingComparatorClass(AiroportsComparableClass.class);
 
-
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
