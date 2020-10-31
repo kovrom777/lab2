@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a031617c-2b3c-4277-bf0d-1764e8a65abc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClassApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClassApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+            <state relative-caret-position="450">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -36,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClassApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -162,12 +161,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportIdWritable.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirraceJoinMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportJoinMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirportWritableComparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/MainClassApp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -228,13 +227,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604148713646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604148792567" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,12 +260,12 @@
       <workItem from="1603956998330" duration="816000" />
       <workItem from="1603992206038" duration="6387000" />
       <workItem from="1604070092964" duration="1101000" />
-      <workItem from="1604094545512" duration="10073000" />
+      <workItem from="1604094545512" duration="10136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18377000" />
+    <option name="totallyTimeSpent" value="18440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -340,13 +339,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AiroportJoinMapper.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/bmstu/ui9/lab2/AirraceJoinMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -438,6 +430,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
         </state>
       </provider>
     </entry>
