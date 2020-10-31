@@ -4,12 +4,13 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import java.io.IOException;
+import java.io.*;
 
 public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
     protected void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException {
         String lineNumber = value.toString();
         String[] airraceArray = lineNumber.split(",");
+        System.setOut(new PrintStream( new FileOutputStream(FileDescriptor.out)));
         System.out.println(value.toString());
 
         if (key.get() > 0){
