@@ -3,13 +3,14 @@ package ru.bmstu.ui9.lab2;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
+import java.io.IOException;
 import java.util.Iterator;
 
 
 public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text, Text, Text> {
 
     @Override
-    protected void reduce(AirportWritableComparable key, Iterable<Text> values, Context contex){
+    protected void reduce(AirportWritableComparable key, Iterable<Text> values, Context contex) throws IOException, InterruptedException {
         Iterator<Text> iterator = values.iterator();
         Text airport = new Text(iterator.next());
         if (iterator.hasNext()){
@@ -23,8 +24,15 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
                 airraceDelay = iterator.next();
                 double dopNewDelay = Double.parseDouble(String.valueOf(airraceDelay));
                 delay += dopNewDelay;
-                
+                if (maxDelay < dopNewDelay) {
+                    delay = dopNewDelay;
+                }
+                if (minDelay < dopNewDelay){
+                    minDelay = dopNewDelay;
+                }
+                count++;
             }
+            contex.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay));
 
         }
     }
