@@ -24,9 +24,11 @@ public class MainClassApp {
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
         job.setPartitionerClass(AirportJoinPartioner.class);
-        job.setMapOutputKeyClass(AirportWritableComparable.class);
-        job.setReducerClass(AirportJoinReducer.class);
         job.setGroupingComparatorClass(AiroportsComparableClass.class);
+        job.setReducerClass(AirportJoinReducer.class);
+        job.setMapOutputKeyClass(AirportWritableComparable.class);
+
+
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);

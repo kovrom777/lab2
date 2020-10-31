@@ -9,7 +9,7 @@ import java.util.Objects;
 
 public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
 
-    int airportId, airportKey;
+    private int airportId, airportKey;
 
     public AirportWritableComparable(){
         airportId = 0;
