@@ -17,7 +17,7 @@ public class MainClassApp {
         }
         Job job = Job.getInstance();
         job.setJarByClass(MainClassApp.class);
-        job.setJobName("Sort Job");
+        job.setJobName("Join Job");
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, AirraceJoinMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportJoinMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
