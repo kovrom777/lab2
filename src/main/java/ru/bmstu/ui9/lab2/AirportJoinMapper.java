@@ -13,7 +13,8 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
             for (int i = 0; i< airraceArray.length; i++){
                 airportName += airraceArray[i];
             }
-            int airraceId = Integer.parseInt(airraceArray[0].replace())
+            int airraceId = Integer.parseInt(airraceArray[0].replace("\"", ""));
+            contex.write();
         }
     }
 }
