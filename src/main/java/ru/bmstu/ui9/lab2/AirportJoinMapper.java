@@ -10,7 +10,10 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
         String[] airraceArray = lineNumber.split(",");
         if (key.get() > 0){
             String airportName = "";
-            
+            for (int i = 0; i< airraceArray.length; i++){
+                airportName += airraceArray[i];
+            }
+            airraceArray
         }
     }
 }
