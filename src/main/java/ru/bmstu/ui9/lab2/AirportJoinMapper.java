@@ -16,6 +16,7 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
                 airportName += airraceArray[i];
             }
             int airraceId = Integer.parseInt(airraceArray[0].replace("\"", ""));
+            System.out.println(airportName.replace("\"", ""));
             context.write(new AirportWritableComparable(airraceId, 0),
                     new Text(airportName.replace("\"", "")));
         }
