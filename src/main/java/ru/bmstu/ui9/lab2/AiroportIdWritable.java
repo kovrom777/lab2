@@ -15,12 +15,6 @@ public class AiroportIdWritable implements Writable  {
         this.description = description;
     }
 
-    public Text getDescription() {
-        return description;
-    }
-
-
-
     @Override
     public void write(DataOutput output) throws IOException {
         description.write(output);
