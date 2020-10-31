@@ -29,7 +29,6 @@ public class MainClassApp {
         job.setMapOutputKeyClass(AirportWritableComparable.class);
 
 
-
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
