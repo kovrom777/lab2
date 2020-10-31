@@ -15,7 +15,14 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
         if (iterator.hasNext()){
             Text airraceDelay = iterator.next();
             int count = 1;
-            
+            double delay = Double.parseDouble(String.valueOf(airraceDelay));
+            double maxDelay = Double.parseDouble(String.valueOf(airraceDelay));
+            double minDelay = Double.parseDouble(String.valueOf(airraceDelay));
+
+            while (iterator.hasNext()){
+                
+            }
+
         }
     }
 
