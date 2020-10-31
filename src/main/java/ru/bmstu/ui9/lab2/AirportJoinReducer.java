@@ -32,8 +32,7 @@ public class AirportJoinReducer extends Reducer<AirportWritableComparable, Text,
                 }
                 count++;
             }
-            System.out.println("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count);
-            context.write(airport, new Text("Minimum delay:" + minDelay + " MaximumDelay: " + maxDelay + " Delay: " + delay/count));
+            context.write(airport, new Text("Min dealy:" + minDelay + " Max delay: " + maxDelay + " Delay: " + delay/count));
 
         }
     }
