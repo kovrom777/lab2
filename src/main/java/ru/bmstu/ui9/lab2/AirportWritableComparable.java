@@ -6,7 +6,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class AirportWritableComparable implements WritableComparable {
+public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
 
     int airportId, airportKey;
 
@@ -52,7 +52,19 @@ public class AirportWritableComparable implements WritableComparable {
         }else if (this.airportId != comp.airportId){
             return -1;
         }
-
+        return 0;
     }
 
+    public int compareAirportId(AirportWritableComparable obj){
+        if (this.airportId == obj.airportId) return 1;
+        else if ()
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj) return true;
+        if (getClass() != obj.getClass()|| obj == null) return false;
+        AirportWritableComparable that = (AirportWritableComparable) obj;
+        return airportId == that.airportId && airportKey == airportKey;
+    }
 }
