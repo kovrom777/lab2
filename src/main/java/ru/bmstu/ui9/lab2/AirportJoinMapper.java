@@ -10,13 +10,15 @@ public class AirportJoinMapper extends Mapper<LongWritable, Text, AirportWritabl
     protected void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException {
         String lineNumber = value.toString();
         String[] airraceArray = lineNumber.split(",");
+        System.out.println(value.toString());
+
         if (key.get() > 0){
             String airportName = "";
             for (int i = 0; i< airraceArray.length; i++){
                 airportName += airraceArray[i];
             }
             int airraceId = Integer.parseInt(airraceArray[0].replace("\"", ""));
-            System.out.println(airportName.replace("\"", ""));
+
             context.write(new AirportWritableComparable(airraceId, 0),
                     new Text(airportName.replace("\"", "")));
         }
